@@ -10,7 +10,6 @@ robocopy "\\%MDT%\UserData\Data\%username%\Templates" "%userprofile%\AppData\Roa
 robocopy "\\%MDT%\UserData\Data\%username%\My Music" "%userprofile%\Music"  /MIR /XX /IPG:5 /COPY:DT /W:5 /R:2 /V /X /XF "thumbs.db"  
 robocopy "\\%MDT%\UserData\Data\%username%\My Videos" "%userprofile%\Videos"  /MIR /XX /IPG:5 /COPY:DT /W:5 /R:2 /V /X /XF "thumbs.db"  
 robocopy "\\%MDT%\UserData\Data\%username%\My Pictures" "%userprofile%\Pictures"  /MIR /XX /IPG:5 /COPY:DT /W:5 /R:2 /V /X /XF "thumbs.db"  
-robocopy "\\%MDT%\UserData\Data\%username%\GQL" "C:\GQL"  /MIR /XX /IPG:5 /COPY:DT /W:5 /R:2 /V /X /XF "thumbs.db"  
 robocopy "\\%MDT%\UserData\Data\%username%\AppData\Local\Microsoft\Outlook" "%userprofile%\AppData\Local\Microsoft\Outlook"  /MIR /XX /IPG:5 /COPY:DT /W:5 /R:2 /V /X /XF "thumbs.db" /XD "IEcompatcache"
 robocopy "\\%MDT%\UserData\Data\%username%\XLSTART" "%userprofile%\AppData\Roaming\Microsoft\Excel\XLSTART" /MIR /XX /IPG:5 /COPY:DT /W:5 /R:2 /V /XF "thumbs.db" /XD "IEcompatcache"
 robocopy "\\%MDT%\UserData\Data\%username%\Downloads" "%userprofile%\Downloads"  /MIR /XX /IPG:5 /COPY:DT /W:5 /R:2 /V /X /XF "thumbs.db"  
