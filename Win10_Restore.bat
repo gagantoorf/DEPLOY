@@ -22,13 +22,6 @@ REM  ****************** Write file with Recent Excel and Word Documents ********
 type \\%MDT%\UserData\Data\%username%\RecentExcelFiles.txt > %userprofile%\Documents\ExcelRecentFiles.txt
 type \\%MDT%\UserData\Data\%username%\RecentWordFiles.txt > %userprofile%\Documents\WordRecentFiles.txt
 
-REM *************************** Webex Info **************************************************************
 
-ECHO Webex_Information > %userprofile%\Documents\WebexInfo.txt
-TYPE \\%MDT%\UserData\Data\%username%\webex_Info.txt | find "PMRUrl" >> %userprofile%\Documents\WebexInfo.txt
-TYPE \\%MDT%\UserData\Data\%username%\webex_Info.txt | find "PMRAccessCode" >> %userprofile%\Documents\WebexInfo.txt
-TYPE \\%MDT%\UserData\Data\%username%\webex_Info.txt | find "SiteName" >> %userprofile%\Documents\WebexInfo.txt
-TYPE \\%MDT%\UserData\Data\%username%\webex_Info.txt | find "UserName" >> %userprofile%\Documents\WebexInfo.txt
-TYPE \\%MDT%\UserData\Data\%username%\webex_Info.txt | find "UserEmail" >> %userprofile%\Documents\WebexInfo.txt
 
 REM echo %time% >> %userprofile%\Desktop\PCName.txt
