@@ -15,7 +15,7 @@ robocopy "%userprofile%\AppData\Local\Microsoft\Outlook" "\\%MDT%\UserData\Data\
 robocopy "%userprofile%\AppData\Roaming\Microsoft\Excel\XLSTART" "\\%MDT%\UserData\Data\%username%\XLSTART" /MIR /XX /IPG:5 /COPY:DT /W:5 /R:2 /V /XF "thumbs.db" /XD "IEcompatcache"
 robocopy "%userprofile%\Downloads" "\\%MDT%\UserData\Data\%username%\Downloads" /MIR /XX /IPG:5 /COPY:DT /W:5 /R:2 /V /X /XF "thumbs.db"  
 robocopy "%userprofile%\AppData\Roaming\Microsoft\Sticky Notes" "\\%MDT%\UserData\Data\%username%\StickyNotes" /MIR /XX /IPG:5 /COPY:DT /W:5 /R:2 /V /X
-reg export HKEY_CURRENT_USER\Software\WebEx\Prodtools \\%MDT%\UserData\Data\%username%\webex_Info.txt
+
 
 
 robocopy "%userprofile%\AppData\Local\Microsoft\Feeds" "\\%MDT%\UserData\Data\%username%\Feeds" /MIR /XX /IPG:5 /COPY:DT /W:5 /R:2 /V /XF "thumbs.db" /XD "IEcompatcache"
