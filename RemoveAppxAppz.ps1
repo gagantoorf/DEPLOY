@@ -26,3 +26,5 @@ PowerShell -Command "Get-appxpackage -allusers *soundrecorder* | Remove-AppxPack
 PowerShell -Command "Get-appxpackage -allusers *bingweather* | Remove-AppxPackage"
 PowerShell -Command "Get-appxpackage -allusers *xboxapp* | Remove-AppxPackage"
 PowerShell -Command "Get-appxpackage -allusers *XboxOneSmartGlass* | Remove-AppxPackage"
+PowerShell -Command "Get-appxpackage -allusers *Microsoft.XboxGamingOverlay* | Remove-AppxPackage"
+PowerShell -Command "Get-appxpackage -allusers *Xbox* | Remove-AppxPackage"
