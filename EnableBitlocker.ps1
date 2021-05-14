@@ -1,1 +1,2 @@
-Enable-Bitlocker -MountPoint c: -UsedSpaceOnly -SkipHardwareTest (Get-BitLockerVolume -MountPoint C).KeyProtector > d:\BitLocker_Recovery_Key.txt
+Enable-Bitlocker -MountPoint c: -UsedSpaceOnly -SkipHardwareTest -RecoveryKeyPath "D:\Recovery\" -RecoveryKeyProtector
+(Get-BitLockerVolume -MountPoint C).KeyProtector > D:\BitLocker_Recovery_Key.txt
