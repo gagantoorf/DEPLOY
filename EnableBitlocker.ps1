@@ -1,1 +1,1 @@
-Enable-Bitlocker -MountPoint c: -UsedSpaceOnly -SkipHardwareTest -RecoveryKeyPath "E:\Recovery\" -RecoveryKeyProtector
+Enable-Bitlocker -MountPoint c: -UsedSpaceOnly -SkipHardwareTest -RecoveryKeyPath "D:\Recovery\" -RecoveryKeyProtector
